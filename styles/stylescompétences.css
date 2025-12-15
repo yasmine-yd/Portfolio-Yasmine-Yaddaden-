@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{ min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(81, 162, 229, 0.758), rgba(172, 100, 228, 0.658));}
+
+header {
+  position: sticky;      /* rend le header collant */
+  top: 0;                /* colle en haut */
+  z-index: 1000;         /* passe au-dessus du contenu */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:rgba(136, 173, 230, 0.95) ;}
+
+.header-right {
+  display: flex;
+  gap: 30px;
+}
+
+a{
+    color: white;
+}
+
+
+.entete{font-size: 50px; color: white;}
+
+.B{color:whitesmoke;}
+
+.vide{margin-bottom: 70px;}
+
+.titre1{ font-size: 20px; color: white; text-align: center;}
+
+.section-competences {
+    background: linear-gradient(to bottom, rgba(81, 162, 229, 0.758), rgba(172, 100, 228, 0.658));
+    padding: 50px 2cm;
+    color: #333;
+}
+
+.section-competences h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.categorie-competences {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.categorie-competences h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Logos à l'intérieur de la catégorie */
+.logos-competences {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.logos-competences img {
+    width: 80px;
+    height: auto;
+}
+
+.categorie-competences:hover {
+    background-color: rgba(70, 69, 71, 0.155);}

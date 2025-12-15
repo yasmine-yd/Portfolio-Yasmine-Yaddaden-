@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{ min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(81, 162, 229, 0.758), rgba(172, 100, 228, 0.658));}
+
+header {
+  position: sticky;      /* rend le header collant */
+  top: 0;                /* colle en haut */
+  z-index: 1000;         /* passe au-dessus du contenu */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:rgba(136, 173, 230, 0.95) ;}
+
+.header-right {
+  display: flex;
+  gap: 30px;
+}
+
+a{
+    color: white;
+}
+
+
+.entete{font-size: 50px; color: white;}
+
+.B{color:whitesmoke;}
+
+.presentation{background-color: white; margin: 1cm; border-radius: 20px;
+            }
+
+.p1{margin-bottom: 16px;}
+
+.p2{font-size: 36px; margin-bottom: 8px;}
+
+.p3{font-size: 19px; letter-spacing: 1px;margin-bottom: 15px;}
+
+.p4{ line-height: 1; text-align: justify; color: rgba(119, 118, 118, 0.904);font-size: 17px;}
+
+.disposition{display: flex;
+  align-items: center; 
+  gap: 30px; /* espace entre la photo et le texte */
+  padding: 20px;}
+
+img{ margin: 20px;border-radius: 50px;}
+
+.aside1 {max-width: 500px; font-family:Georgia, 'Times New Roman', Times, serif;}
+
+.contact {
+  margin-top: 20px; /* espace sous le texte */
+}
+
+.contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espace entre icône et texte */
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.a-propos-de-moi {
+  max-width: 500px;
+  font-size: 17px;
+  color: white;
+  line-height: 1.4;
+  text-align: justify;
+  margin: 50px;
+}
+
+
+.titre{margin-bottom: 10px; font-size: 30px;}
+
+.text-a-propos-de-moi{font-size: 20px;}
+
+.slide2{display: flex;             /* alignement horizontal */
+    align-items: flex-start;   /* alignement vertical en haut */
+    gap: 20px;                 /* espace entre logos et texte */
+    margin: 2cm;}
+
+.logos{    display: flex;
+       flex-wrap: wrap;       /* permet de passer à la ligne suivante */
+       gap: 15px;             /* espace entre les logos */
+       justify-content: flex-start; /* alignement à gauche */
+       max-width: 300px;}
+
+.logos img {width: 80px;               /* taille des logos */
+    height: auto;  flex: 0 0 30%;}

@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{ min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(81, 162, 229, 0.758), rgba(172, 100, 228, 0.658));}
+
+header {
+  position: sticky;      /* rend le header collant */
+  top: 0;                /* colle en haut */
+  z-index: 1000;         /* passe au-dessus du contenu */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:rgba(136, 173, 230, 0.95) ;}
+
+.header-right {
+  display: flex;
+  gap: 30px;
+}
+
+a{
+    color: white;
+}
+
+
+.entete{font-size: 50px; color: white;}
+
+.B{color:whitesmoke;}
+
+.section-projets {
+    padding: 50px 2cm;
+}
+
+.section-projets h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.carte-projet {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 350px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.image-projet {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-projet img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.35);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.lien-projet:hover .overlay {
+    opacity: 1;
+}
+
+.lien-projet:hover img {
+    transform: scale(1.05);
+}
+
+
+.description-projet {
+    padding: 20px;
+}
+
+.description-projet h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.description-projet p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4;
+}
+
+
+.lien-projet {
+    text-decoration: none;
+    color: inherit;
+}
