@@ -92,3 +92,43 @@ a{
 .contact-form button:hover {
     background-color:transparent;
 }
+
+
+/*pour téléphone*/
+    /* Pour les écrans <= 768px (tablettes et mobiles) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .section-projets, .contact-section, .section-competences, .presentation, .slide2 {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .disposition, .slide2 {
+    flex-direction: column;  /* empile les éléments verticalement */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logos, .logos-competences {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .carte-projet {
+    width: 100%;  /* s'adapte à la largeur de l'écran */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
