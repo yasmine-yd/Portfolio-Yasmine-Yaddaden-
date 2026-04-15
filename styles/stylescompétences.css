@@ -2,110 +2,108 @@
   margin: 0;
   padding: 0;
 }
-body{ min-height: 100vh;
-    background: linear-gradient(to bottom, rgba(81, 162, 229, 0.758), rgba(172, 100, 228, 0.658));}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(81, 162, 229, 0.758), rgba(172, 100, 228, 0.658));
+}
 
 header {
-  position: sticky;      /* rend le header collant */
-  top: 0;                /* colle en haut */
-  z-index: 1000;         /* passe au-dessus du contenu */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color:rgba(136, 173, 230, 0.95) ;}
+  background-color: rgba(136, 173, 230, 0.95);
+}
 
 .header-right {
   display: flex;
   gap: 30px;
 }
 
-a{
-    color: white;
-}
+a { color: white; }
 
+.entete { font-size: 50px; color: white; }
+.B { color: whitesmoke; }
 
-.entete{font-size: 50px; color: white;}
-
-.B{color:whitesmoke;}
-
-.vide{margin-bottom: 70px;}
-
-.titre1{ font-size: 20px; color: white; text-align: center;}
+.vide { margin-bottom: 70px; }
 
 .section-competences {
-    background: linear-gradient(to bottom, rgba(81, 162, 229, 0.758), rgba(172, 100, 228, 0.658));
-    padding: 50px 2cm;
-    color: #333;
+  background: linear-gradient(to bottom, rgba(81, 162, 229, 0.758), rgba(172, 100, 228, 0.658));
+  padding: 50px 2cm;
+  color: #333;
 }
 
 .section-competences h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: white;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: white;
 }
 
 .categorie-competences {
-    background-color: white;
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .categorie-competences h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-/* Logos à l'intérieur de la catégorie */
 .logos-competences {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.logos-competences img {
-    width: 80px;
-    height: auto;
+/* Chaque logo avec son label */
+.logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-item img {
+  width: 80px;
+  height: auto;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.logo-item span {
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
 }
 
 .categorie-competences:hover {
-    background-color: rgba(70, 69, 71, 0.155);}
+  background-color: rgba(70, 69, 71, 0.155);
+}
 
-/*pour téléphone*/
-    /* Pour les écrans <= 768px (tablettes et mobiles) */
 @media screen and (max-width: 768px) {
-  body {
-    padding: 0 10px;
-  }
+  body { padding: 0 10px; }
 
-  .section-projets, .contact-section, .section-competences, .presentation, .slide2 {
+  .section-competences {
     padding: 20px;
     margin: 10px;
   }
 
-  .disposition, .slide2 {
-    flex-direction: column;  /* empile les éléments verticalement */
-    align-items: center;
-    gap: 15px;
-  }
-
-  .logos, .logos-competences {
+  .logos-competences {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .carte-projet {
-    width: 100%;  /* s'adapte à la largeur de l'écran */
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
+  .logo-item img {
+    width: 60px;
   }
 
   .header-right {
@@ -113,5 +111,4 @@ a{
     gap: 10px;
   }
 }
-
 
